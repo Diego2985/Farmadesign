@@ -3,12 +3,12 @@ import "../Pages/Css/Inicio.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const images = [
-  "/image/Slider/image_1.jpg",
-  "/image/Slider/image_2.jpg",
-  "/image/Slider/image_3.jpg",
-  "/image/Slider/image_4.jpg",
-  "/image/Slider/image_5.jpg",
+  { src: "/image/Slider/image_1.jpg", label: "" },
+  { src: "/image/Slider/image_2.jpg", label: "" },
+  { src: "/image/Slider/image_3.jpg", label: "ANTES" },
+  { src: "/image/Slider/image_4.jpg", label: "DESPUÉS" } 
 ];
+
 
 const Inicio = () => {
   return (
@@ -18,17 +18,59 @@ const Inicio = () => {
           <div
             key={index}
             className={`carousel-item ${index === 0 ? "active" : ""}`}
+            style={{ position: "relative" }}
           >
-            <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+            {/* Imagen del carrusel */}
+            <img
+              src={image.src}
+              className="d-block w-100"
+              alt={`Slide ${index + 1}`}
+              style={{ height: "600px", objectFit: "cover" }}
+            />
+
+            {/* Etiqueta "ANTES" o "DESPUÉS" */}
+            {image.label && (
+              <div
+                className="position-absolute text-white bg-dark px-3 py-1 rounded"
+                style={{
+                  top: "10%",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  fontSize: "1.5rem",
+                  fontWeight: "bold",
+                  zIndex: 10,
+                }}
+              >
+                {image.label}
+              </div>
+            )}
+
+            {/* Contenido del texto sobre cada imagen */}
+            <div
+              className="carousel-caption d-flex flex-column align-items-center justify-content-center"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "100%",
+                textAlign: "center",
+              }}
+            >
+              <div className="text-white p-4 bg-white gradient-overlay bg-opacity-10 rounded-xl backdrop-blur-md transition-transform transform hover:scale-105">
+                <h1 className="text-4xl md:text-6xl text-shadow font-bold text-center">
+                  Diseña EN EL MUNDO REAL
+                </h1>
+                <h2 className="mt-2 text-4xl md:text-6xl text-shadow font-bold italic text-center leading-tight tracking-wide">
+                  "La farmacia de tus sueños"
+                </h2>
+                <a href="#portfolio" className="boton-personalizado">
+                  Más información
+                </a>
+              </div>
+            </div>
           </div>
         ))}
-        {/* Contenido del texto sobre el carrusel */}
-        <div className="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
-          <div className="text-white p-4 bg-white gradient-overlay bg-opacity-10 rounded-xl backdrop-blur-md transition-transform transform hover:scale-105">
-            <h1 className="text-4xl md:text-6xl text-shadow font-bold text-center">DISEÑA EN EL MUNDO REAL</h1>
-            <p className="mt-2 text-xl md:text-2xl text-shadow text-center">LA FARMACIA DE TUS SUEÑOS.</p>
-          </div>
-        </div>
       </div>
 
       {/* Botones de navegación */}
