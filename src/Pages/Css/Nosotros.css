@@ -1,0 +1,48 @@
+#nosotros {
+    background-color: #3FAFB8;
+    padding-bottom: 4rem; /* Espacio inferior */
+  }
+.card-container {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    gap: 20px;                /* Espacio entre imágenes */
+    flex-wrap: wrap;          /* Permite que se acomoden en varias filas si no hay espacio */
+  }
+  
+  .card {
+    width: 300px;             /* Tamaño fijo de las tarjetas */
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .card img {
+    width: 100%;              /* Para que las imágenes sean responsivas */
+    height: auto;
+    display: block;
+  }
+
+  .text-container {
+    max-width: 900px; /* Ajusta este valor según el tamaño de las tarjetas */
+    margin: auto;
+    text-align: center;
+  }
+
+  .nosotros-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+    
+  .card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
