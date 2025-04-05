@@ -13,7 +13,7 @@ const Footer = () => {
         
         {/* Logo y texto */}
         <div className="footer-left">
-          <a className="footer-brand" href="#home">
+          <a className="footer-brand" href="#">
             <img src={footer_logo} alt="Logo" className="footer-logo-img"/>
             <span className="farma">FARMA</span>
             <span className="design">DESIGN</span>

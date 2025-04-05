@@ -20,23 +20,28 @@
   .footer-left {
     display: flex;
     align-items: center;
+    gap: 5px;
+  }
+  
+  footer a {
+    text-decoration: none;
   }
   
   .footer-logo-img {
     height: 100px;
-    margin-right: -20px;
+    margin-right: -45px;
   }
   
   .farma {
     color: #3FAFB8;
     font-weight: bold;
-    margin-left: -5px;
+    margin-left: -2px;
   }
   
   .design {
     color: #5E7D99;
     font-weight: bold;
-    margin-left: -5px;
+    margin-left: -1px;
   }
   
   .footer-contact {
@@ -78,7 +83,7 @@
     margin: 4px 0;
   }
   
-  /* 📱 Mobile adjustments */
+  /* Mobile adjustments */
   @media (max-width: 768px) {
     .footer {
       padding: 1rem 0.5rem;
@@ -86,7 +91,7 @@
   
     .footer-logo-img {
       height: 60px;
-      margin-right: -10px;
+      margin-right: -20px;
     }
   
     .footer-contact p {
@@ -103,6 +108,7 @@
   
     .footer-left {
       justify-content: center;
+      margin-left: -50px;
     }
   
     .footer-social {
