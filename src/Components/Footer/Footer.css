@@ -2,101 +2,121 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F1F0EC; 
+    background-color: #F1F0EC;
     padding: 2rem 1rem;
     width: 100%;
     text-align: center;
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 20px;
-    background-color: #F1F0EC;
-}
-
-
-/* Logo */
-.footer-brand {
+  }
+  
+  .footer-left {
     display: flex;
     align-items: center;
-    text-decoration: none; /* Quitar subrayado */
-    
-}
-
-.footer-logo-img {
-    height: 80px;
-    margin-right: -35px;
-}
-
-/* Estilos del texto "FARMA DESIGN" */
-.farma {
+  }
+  
+  .footer-logo-img {
+    height: 100px;
+    margin-right: -20px;
+  }
+  
+  .farma {
     color: #3FAFB8;
     font-weight: bold;
-  ;
-}
-
-.design {
+    margin-left: -5px;
+  }
+  
+  .design {
     color: #5E7D99;
     font-weight: bold;
-    margin-left: -1px;
-}
-
-/* Información de contacto */
-.footer-contact {
+    margin-left: -5px;
+  }
+  
+  .footer-contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .footer-contact p {
+    margin: 4px 0;
     font-size: 14px;
-}
-
-.footer-contact .icon {
+  }
+  
+  .icon {
     color: #3FAFB8;
-    margin-right: 5px;
-}
-
-/* Redes sociales */
-.footer-social {
+    margin-right: 8px;
+  }
+  
+  .footer-social {
     display: flex;
     justify-content: center;
-    gap: 15px;
-}
-
-.social-icon {
+    gap: 10px;
+  }
+  
+  .social-icon {
     width: 24px;
     height: 24px;
-}
-
-/* Derechos de autor */
-.footer-copyright {
+  }
+  
+  .footer-copyright {
     text-align: center;
     width: 100%;
-    margin-top: 15px;
-}
-
-/* Ajustes para Mobile */
-@media (max-width: 768px) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-copyright p {
+    margin: 4px 0;
+  }
+  
+  /* 📱 Mobile adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1rem 0.5rem;
+    }
+  
+    .footer-logo-img {
+      height: 60px;
+      margin-right: -10px;
+    }
+  
+    .footer-contact p {
+      font-size: 12px;
+      margin: 2px 0;
+    }
+  
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
     }
-
-    .footer-contact {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-
+  
     .footer-left {
-        margin-left: -45px;
+      justify-content: center;
     }
-}
+  
+    .footer-social {
+      justify-content: center;
+      gap: 8px;
+    }
+  
+    .social-icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .footer-copyright {
+      font-size: 12px;
+    }
+  }
+  
