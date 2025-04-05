@@ -47,16 +47,16 @@ const Navbar = () => {
          <div className="collapse navbar-collapse" id="navbarNav">
            <ul className="navbar-nav ml-auto">
              <li className="nav-item">
-               <a className="nav-link" href="#home" >INICIO</a>
+               <a className="nav-link" href="#inicio" >INICIO</a>
              </li>
              <li className="nav-item">
-               <a className="nav-link" href="#about" >NOSOTROS</a>
+               <a className="nav-link" href="#nosotros" >NOSOTROS</a>
              </li>
              <li className="nav-item">
-               <a className="nav-link" href="#services" >SERVICIOS</a>
+               <a className="nav-link" href="#servicios" >SERVICIOS</a>
              </li>
              <li className="nav-item">
-               <a className="nav-link" href="#contact" >CONTACTO</a>
+               <a className="nav-link" href="#contacto" >CONTACTO</a>
              </li>
            </ul>   
             </div>

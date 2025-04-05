@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-        <div id="home" style={{ paddingTop: '56px' }}>
+        <div id="inicio" style={{ paddingTop: '56px' }}>
           <Inicio />
         </div>
         <div id="nosotros" style={{ paddingTop: '56px' }}>

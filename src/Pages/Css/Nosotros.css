@@ -7,7 +7,8 @@
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
     gap: 20px;                /* Espacio entre imágenes */
-    flex-wrap: wrap;          /* Permite que se acomoden en varias filas si no hay espacio */
+    flex-wrap: wrap; 
+    padding: 20px;      /* Permite que se acomoden en varias filas si no hay espacio */
   }
   
   .card {
@@ -20,7 +21,7 @@
   
   .card img {
     width: 100%;              /* Para que las imágenes sean responsivas */
-    height: auto;
+    height: auto;             /* Mantiene la proporción de la imagen */         /* Cubre el área de la tarjeta */
     display: block;
     min-height: 300px; /* Evita que se colapse */
   }
@@ -41,9 +42,4 @@
     margin: auto;
   }
     
-  .card-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+  
