@@ -1,0 +1,77 @@
+#servicios {
+    background-color: #3FAFB8;
+    padding-bottom: 4rem; /* Espacio inferior */
+  }
+  
+  .text-farmadesign {
+    color: #f1f0ec !important
+  }
+
+
+  .card-container-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto; /* 🔥 Esto centra el contenedor horizontalmente */
+    box-sizing: border-box;
+  }
+  
+  .card-container-servicios .card {
+    background-color: white;
+    width: 300px;
+    max-width: 100%;
+    height: 449px;
+    border-radius: 10px;  
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .card-container-servicios .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-container-servicios .card-body {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-container-servicios .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-container-servicios .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .card-container-servicios .btn {
+    width: auto;
+    align-self: center; /* o center si querés centrar el botón horizontalmente */
+    padding: 6px 16px;
+    font-size: 0.9rem;
+  }
+    
+
+  
+  @media (max-width: 576px) {
+    .card-container-servicios .card {
+      height: auto;
+    }
+  
+    .card-container-servicios .card-img-top {
+      height: 180px;
+    }
+  }

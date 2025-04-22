@@ -13,7 +13,7 @@ const Footer = () => {
         
         {/* Logo y texto */}
         <div className="footer-left">
-          <a className="footer-brand" href="#">
+          <a className="footer-brand" href="/">
             <img src={footer_logo} alt="Logo" className="footer-logo-img"/>
             <span className="farma">FARMA</span>
             <span className="design">DESIGN</span>
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-contact">
           <p><FaMapMarkerAlt className="icon"/> Dirección: Calle Falsa 2224</p>
           <p><FaPhoneAlt className="icon"/> Teléfono: 123456789</p>
-          <p><FaEnvelope className="icon"/> Email: hola@mail.com</p>
+          <p><FaEnvelope className="icon"/> Email: angelgomez@farmadesign.com.ar</p>
         </div>
 
         {/* Iconos de redes sociales */}     

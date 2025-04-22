@@ -12,12 +12,33 @@ const Navbar = () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const bsCollapse = document.getElementById("navbarNav");
 
+    // Oculta el menú al hacer clic en un enlace
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         const collapse = new Collapse(bsCollapse, { toggle: true });
         collapse.hide();
       });
     });
+
+    // Scroll suave con compensación para que el navbar no tape el contenido
+    const handleAnchorClick = (e) => {
+      const href = e.target.getAttribute("href");
+      if (href?.startsWith("#")) {
+        e.preventDefault();
+        const id = href.replace("#", "");
+        const section = document.getElementById(id);
+        if (section) {
+          const offset = 100; // Ajusta este valor según la altura de tu navbar
+          const top = section.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({
+            top,
+            behavior: "smooth",
+          });
+        }
+    }
+  };
+
+  navLinks.forEach(link => link.addEventListener("click", handleAnchorClick));    
 
     return () => {
       navLinks.forEach((link) => {

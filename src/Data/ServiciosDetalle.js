@@ -1,0 +1,98 @@
+export const serviciosDetalle = {
+    1: {
+        id: 1,
+        nombre: 'Farmacia Vilela',
+        ubicacion: 'San Justo',
+        descripcion: 'La Farmacia Vilela ofrece una amplia gama de productos farmacéuticos y atención personalizada.',
+        imagenes: [
+        require('../Assets/image/Card/Farm_Vilela/antes1.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/antes2.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/antes3.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/antes4.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/antes5.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/antes6.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/despues1.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/despues2.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/despues3.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/despues4.jpg'),
+        require('../Assets/image/Card/Farm_Vilela/despues5.jpg'),
+        ]
+    },
+    2: {
+        id: 2,
+        nombre: 'Farmacia RP',
+        ubicacion: 'Ciudad Autonoma de Buenos Aires',
+        descripcion: 'La Farmacia RP se especializa en medicamentos de alta calidad y atención al cliente excepcional.',
+        imagenes: [
+        require('../Assets/image/Card/Farm_RP/despues1.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues2.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues3.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues4.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues5.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues6.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues7.jpg'),
+        require('../Assets/image/Card/Farm_RP/despues8.jpg'),
+        ]
+    },
+    3: {
+        id: 3,
+        nombre: 'Farmacia Paradiñeiro',
+        ubicacion: 'Pilar',
+        descripcion: 'La Farmacia Paradiñeiro ofrece un servicio integral y personalizado para cada cliente.',
+        imagenes: [
+        require('../Assets/image/Card/Farm_Paradiñeiro/antes1.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/antes2.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues1.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues2.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues3.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues4.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues5.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues6.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues7.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues8.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues9.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues10.jpg'),
+        require('../Assets/image/Card/Farm_Paradiñeiro/despues11.jpg'),
+        ]
+    },
+    4: {
+        id: 4,
+        nombre: 'Farmacia Callao',
+        ubicacion: 'Ciudad Autonoma de Buenos Aires',
+        descripcion: 'La Farmacia Callao se destaca por su atención al cliente y productos de calidad.',
+        imagenes: [
+        require('../Assets/image/Card/Farm_Callao/antes1.jpg'),
+        require('../Assets/image/Card/Farm_Callao/antes2.jpg'),
+        require('../Assets/image/Card/Farm_Callao/antes3.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues1.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues2.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues3.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues4.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues5.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues6.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues7.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues8.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues9.jpg'),
+        require('../Assets/image/Card/Farm_Callao/despues10.jpg'),
+        ]
+    },
+    5: {
+        id: 5,
+        nombre: 'Farmacia La Botica',
+        ubicacion: 'Ciudad Autonoma de Buenos Aires',
+        descripcion: 'La Farmacia La Botica ofrece un ambiente acogedor y atención personalizada.',
+        imagenes: [
+        require('../Assets/image/Card/Farm_Botica/antes1.jpg'),
+        require('../Assets/image/Card/Farm_Botica/antes2.jpg'),
+        require('../Assets/image/Card/Farm_Botica/antes3.jpg'),
+        require('../Assets/image/Card/Farm_Botica/antes4.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues1.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues2.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues3.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues4.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues5.jpg'),
+        require('../Assets/image/Card/Farm_Botica/despues6.jpg'),
+        ]
+    },
+    // Agrega más farmacias aquí siguiendo el mismo formato
+} 

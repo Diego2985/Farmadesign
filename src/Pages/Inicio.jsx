@@ -12,7 +12,7 @@ const images = [
 
 const Inicio = () => {
   return (
-    <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
+    <div id="inicio" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         {images.map((image, index) => (
           <div
@@ -64,7 +64,7 @@ const Inicio = () => {
                 <h2 className="mt-2 text-4xl md:text-6xl text-shadow font-bold italic text-center leading-tight tracking-wide">
                   "La farmacia de tus sueños"
                 </h2>
-                <a href="#portfolio" className="boton-personalizado">
+                <a href="#nosotros" className="boton-personalizado">
                   Más información
                 </a>
               </div>
@@ -74,11 +74,11 @@ const Inicio = () => {
       </div>
 
       {/* Botones de navegación */}
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button className="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button className="carousel-control-next" type="button" data-bs-target="#inicio" data-bs-slide="next">
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>

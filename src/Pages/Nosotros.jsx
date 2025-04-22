@@ -8,7 +8,7 @@ const Nosotros = () => {
 
   return (
    
-<div id="nosotros" className="py-16 bg-teal-500 text-white">
+<div id="nosotros" className="pt-5 pb-4 bg-teal-500 text-white">
   <section className="text-container">
     <h2 className="text-4xl font-bold">Nosotros</h2>
     <p className="text-lg mt-4 leading-relaxed">
