@@ -46,7 +46,7 @@ const Contacto = () => {
         <div className="row mb-4">
           <h2 className="text-center text-4xl font-bold">Contacto</h2>
         </div>
-        <form onSubmit={handleSubmit} className="row g-4 p-4 bg-light rounded shadow mx-auto" style={{ maxWidth: '700px' }}>
+        <form onSubmit={handleSubmit} className="row g-4 p-4 rounded shadow mx-auto" style={{ maxWidth: '700px',background: '#5E7D99' }}>
           <div className="mb-3 text-start">            
             <input type="text" className="form-control rounded-pill w-75" id="nombre" name="nombre" placeholder='Nombre' required />
           </div>
@@ -63,11 +63,12 @@ const Contacto = () => {
             />
           </div>
           <div className="mb-3 text-start">
-            <button type="submit" className="btn btn-primary px-4 rounded-pill">Enviar</button>
+            <button type="submit" className="btn px-4 rounded-pill text-white" style={{ background:'#3FAFB8' }} border= '2px solid #3FAFB8'
+              >Enviar</button>
           </div>
         </form>
       </div>
-      <div style={{ height: '290px' }}></div> {/* Espacio final */}
+      <div style={{ height: '290px'}}></div> {/* Espacio final */}
     </section>
   );
 };

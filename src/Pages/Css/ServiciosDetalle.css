@@ -1,0 +1,23 @@
+/* ServiciosDetalle.css */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #serviciosdetalle {
+    background-color: #5E7D99;
+    margin-top: -56px;      
+  /* 2. Añade padding para que el contenido no quede oculto */
+    padding-top: 56px; 
+    min-height: 100vh;       /* cubre toda la ventana */
+    padding: 20px;           /* tu padding */
+    box-sizing: border-box;
+    /* elimina display:flex para no bloquear el menú */
+  }
+  
+  /* Si tu navbar es fixed o sticky: */
+  .navbar {
+    position: sticky;  /* o fixed */
+    top: 0;
+    z-index: 1000;     /* más alto que el default de la sección */
+  }

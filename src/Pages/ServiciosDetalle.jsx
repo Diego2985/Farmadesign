@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import './Css/ServiciosDetalle.css'; // Asegúrate de que la ruta sea correcta
 
 import Lightbox from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
@@ -31,10 +31,11 @@ export default function ServiciosDetalle() {
       }));
 
         return (
-            <div className="container py-5 mb-5" style={{ paddingBottom: "150px" }}>
-                <h2 className="mb-3">{servicios.nombre}</h2>
-                <p className="text-muted">{servicios.ubicacion}</p>
-                <p>{servicios.descripcion}</p>
+            <div className="bg-teal-500" id="serviciosdetalle">
+            <div  className="container py-5 mb-5" style={{ paddingBottom: "150px" }}>
+                <h2 className="mb-3 text-white">{servicios.nombre}</h2>
+                <p className="text-white">{servicios.ubicacion}</p>
+                <p className="text-white">{servicios.descripcion}</p>
 
                 <div className="row pb-10">
                   {servicios.imagenes.map((src, i) => (
@@ -73,12 +74,13 @@ export default function ServiciosDetalle() {
         
               {/* Boton de volver */}
               <div className="text-center mt-5">
-                   <button className="btn btn-outline-secondary my-3" 
+                   <button className="btn btn-light my-3" 
                    onClick={() => navigate(-1)}>
                         ← Volver
                    </button>
               </div>
-              </div>        
+              </div>  
+              </div>      
             );       
           } 
 
