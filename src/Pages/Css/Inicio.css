@@ -28,3 +28,7 @@
   .carousel-item img {
     filter: brightness(80%) contrast(110%) saturate(90%);
   }
+ 
+  .carousel-inner {
+       margin-top: -58px; /* Ajusta este valor según el tamaño de tu navbar */
+  }

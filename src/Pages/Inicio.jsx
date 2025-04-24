@@ -12,6 +12,8 @@ const images = [
 
 const Inicio = () => {
   return (
+    // Contenedor del carrusel
+    <div className="inicio">
     <div id="inicio" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         {images.map((image, index) => (
@@ -82,6 +84,7 @@ const Inicio = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 };
