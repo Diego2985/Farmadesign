@@ -28,6 +28,33 @@
   color: #61dafb;
 }
 
+.brand-title {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  line-height: 1;
+}
+
+.brand-title .farma {
+  color: #3FAFB8;
+}
+
+.brand-title .design {
+  color: #5E7D99;
+}
+
+
+.navbar .brand-title {
+  font-size: 22px !important;
+}
+.footer .brand-title {
+  font-size: 22px !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -47,4 +47,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+  window.addEventListener("scroll", function () {
+    const footer = document.querySelector(".footer");
+    const scrollTop = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (footer && window.innerWidth <= 768 && scrollTop >= documentHeight - 50) {
+      footer.classList.add("mostrar-footer");
+    }
+  },
+  {passive: true}
+  );
+</script>
 </html>

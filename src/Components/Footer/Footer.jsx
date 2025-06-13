@@ -1,47 +1,74 @@
-import React from 'react';
-import footer_logo from '../../Assets/image/logo.png';
+import React, { useEffect, useState } from 'react';
 import './Footer.css';
-import facebook_icon from '../../Assets/image/Iconos/facebook.png';
-import whatsapp_icon from '../../Assets/image/Iconos/whatsapp.png';
-import instagram_icon from '../../Assets/image/Iconos/instagram.png';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import Logo from '../../Assets/image/logo.png'; // Asegurate que esta ruta sea correcta
 
-const Footer = () => {
+export default function Footer() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <footer className="footer fixed-bottom">
-      <div className="container footer-container">
-        
-        {/* Logo y texto */}
-        <div className="footer-left">
-          <a className="footer-brand" href="/">
-            <img src={footer_logo} alt="Logo" className="footer-logo-img"/>
-            <span className="farma">FARMA</span>
-            <span className="design">DESIGN</span>
-          </a>   
+    <>
+      {!isMobile && (
+        <footer className="footer">
+          <div className="footer-container">
+            {/* Logo y marca */}
+            <div className="footer-left">
+              <div className="footer-brand">
+                <img src={Logo} alt="Logo" className="footer-logo" />
+                <h2 className="brand-title">
+                  <span className="farma">FARMA</span>
+                  <span className="design">DESIGN</span>
+                </h2>
+                <p className="footer-description">Diseñamos espacios únicos para tu farmacia.</p>
+              </div>
+            </div>
+
+            {/* Contacto */}
+            <div className="footer-right">
+              <h3 className="footer-contact-title">Contacto</h3>
+              <p><FaWhatsapp className="icon" /> 011 1534-5678</p>
+              <p><FaEnvelope className="icon" /> angelgomez@farmadesign.com.ar</p>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} FarmaDesign. Todos los derechos reservados.</p>
+            <p>
+              Sitio desarrollado por{' '}
+              <a
+                href="https://tutarjetadigital.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="desarrollador-link"
+              >
+                Jorge Diego Arredondo
+              </a>
+            </p>
+          </div>
+        </footer>
+      )}
+
+      {isMobile && (
+        <div className="mini-footer">
+          <a
+            href="https://wa.me/5491158531859"
+            className="whatsapp-button"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Chat en WhatsApp"
+          >
+            <FaWhatsapp size={28} />
+          </a>
         </div>
-
-        {/* Información de contacto */}   
-        <div className="footer-contact">
-          <p><FaMapMarkerAlt className="icon"/> Dirección: Calle Falsa 2224</p>
-          <p><FaPhoneAlt className="icon"/> Teléfono: 123456789</p>
-          <p><FaEnvelope className="icon"/> Email: angelgomez@farmadesign.com.ar</p>
-        </div>
-
-        {/* Iconos de redes sociales */}     
-        <div className="footer-social">
-          <img src={facebook_icon} alt="Facebook" className="social-icon"/>
-          <img src={instagram_icon} alt="Instagram" className="social-icon"/>
-          <img src={whatsapp_icon} alt="Whatsapp" className="social-icon"/>
-        </div> 
-      </div>
-
-      <div className="footer-copyright">
-        <hr />
-        <p>© 2025 FARMADESIGN - Todos los derechos reservados</p>
-        <p>Desarrollado por <a href="https://www.linkedin.com/in/Jorge-Diego-Arredondo/" target="_blank" rel="noopener noreferrer">Jorge Diego Arredondo</a></p>
-      </div>                  
-    </footer>
+      )}
+    </>
   );
 }
-
-export default Footer;

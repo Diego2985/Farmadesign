@@ -51,10 +51,12 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg fixed-top" >
       <div className="container"> 
         <a className="navbar-brand d-flex align-items-center" href="#home">
-          <img src={logo} alt="" style={{ height: "100px", marginRight: "-45px" }}/>
-          <span className="farma" style={{ color: "#3FAFB8", fontWeight: "bold" }}>FARMA</span>
-          <span className="design" style={{ color: "#5E7D99", fontWeight: "bold" }}>DESIGN</span>
-        </a>         
+            <img src={logo} alt="Logo" style={{ height: "100px", marginRight: "-45px" }} />
+            <h2 className="brand-title mb-0 ms-2">
+              <span className="farma">FARMA</span>
+              <span className="design">DESIGN</span>
+            </h2>
+          </a>     
          <button 
            className="navbar-toggler" type="button" 
            data-bs-toggle="collapse" 
