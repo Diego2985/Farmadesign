@@ -44,7 +44,7 @@ export default function Footer() {
             <p>
               Sitio desarrollado por{' '}
               <a
-                href="https://tutarjetadigital.vercel.app/"
+                href="https://tarjeta-digital-five.vercel.app//"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="desarrollador-link"
