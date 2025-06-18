@@ -58,17 +58,28 @@ export default function Footer() {
 
       {isMobile && (
         <div className="mini-footer">
-          <a
-            href="https://wa.me/5491158531859"
-            className="whatsapp-button"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Chat en WhatsApp"
-          >
-            <FaWhatsapp size={28} />
-          </a>
-        </div>
-      )}
-    </>
+           <p className="mini-credito">
+             Sitio por{' '}
+             <a
+               href="https://tarjeta-digital-five.vercel.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               Jorge Diego Arredondo
+             </a>
+           </p>
+
+           <a
+             href="https://wa.me/5491158531859"
+             className="whatsapp-button"
+             target="_blank"
+             rel="noreferrer"
+             aria-label="Chat en WhatsApp"
+           >
+             <FaWhatsapp size={28} />
+          </a>                 
+         </div>
+         )}
+     </>
   );
 }

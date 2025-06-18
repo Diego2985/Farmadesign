@@ -85,21 +85,40 @@
 /* Mini footer móvil */
 .mini-footer {
   background-color: #f1f0ec;
-  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 50;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mini-credito {
+  font-size: 12px;
+  color: #3fafb8;
+  text-align: left;
+}
+
+.mini-credito a {
+  color: #5e7d99;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .whatsapp-button {
-  color: #3fafb8;
+  color: #25D366;
   background-color: white;
-  padding: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
 }
 
 
